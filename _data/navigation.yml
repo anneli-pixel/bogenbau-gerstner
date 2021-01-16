@@ -1,0 +1,8 @@
+- name: Home
+  link: /home
+- name: Angebot
+  link: /angebot
+- name: Über mich
+  link: /über-mich
+- name: Kontakt
+  link: /kontakt
