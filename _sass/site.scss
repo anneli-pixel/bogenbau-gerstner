@@ -1,0 +1,43 @@
+// mobile: @media (max-width: 767px)
+// desktop: @media (min-width 768px)
+
+body {
+  font-family: Work Sans;
+}
+
+h1 {
+  text-align: center;
+}
+
+h1,h2 {
+  font-family: Work Sans;
+  font-weight: 600;
+}
+
+p {
+  font-family: Spectral;
+  font-weight: 300;
+}
+
+img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 88vw;
+    margin: auto;
+    margin-top: 24px;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    max-width: 100vw;
+    margin: auto;
+    margin-top: 24px;
+  }
+}
+

@@ -1,8 +1,8 @@
-- name: Home
+- name: HOME
   link: /home
-- name: Angebot
+- name: ANGEBOT
   link: /angebot
-- name: Über mich
+- name: ÜBER
   link: /über-mich
-- name: Kontakt
+- name: KONTAKT
   link: /kontakt
