@@ -10,8 +10,11 @@
     <link rel="stylesheet" href="/assets/css/styles.css">
 
   </head>
-  <body class="container">
+  <body class="site-container">
     {% include navigation.html %}
-    {{ content }}
+    <main class="site-content">
+      {{ content }}
+    </main>
+    {% include footer.html %}
   </body>
 </html>
