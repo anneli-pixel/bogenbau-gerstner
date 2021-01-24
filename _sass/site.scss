@@ -27,9 +27,22 @@ img {
 }
 
 img.portrait {
-    height: auto;
-    width: 100%;
+    object-fit: contain;
   }
+
+@media (max-width: 767px) {
+  img.portrait {
+    height: unset;
+    width: 100vw;
+  }
+}
+
+@media (min-width: 768px) {
+  img.portrait {
+    height: 48vh;
+    width: unset;
+  }
+}
 
 .site-container {
   display: flex;
