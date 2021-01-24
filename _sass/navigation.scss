@@ -12,6 +12,10 @@
   text-decoration: none;
   font-family: Work Sans;
   color: #000000;
+
+  &:hover {
+    color: #C8A95C;
+  }
 }
 
 @media (min-width: 768px) {
