@@ -26,6 +26,11 @@ img {
   object-fit: cover;
 }
 
+img.portrait {
+    height: auto;
+    width: 100%;
+  }
+
 .site-container {
   display: flex;
   min-height: 100vh;
