@@ -13,6 +13,10 @@
 @media (min-width: 768px) {
   .ueber-mich-flex-container > .page-text {
     margin-left: 2rem;
+
+    p {
+      margin-block-start: 0;
+    }
   }
 }
 
