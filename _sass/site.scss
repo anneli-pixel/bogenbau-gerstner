@@ -12,7 +12,7 @@ h1 {
 
 h1,h2 {
   font-family: Work Sans;
-  font-weight: 600;
+  font-weight: 300;
 }
 
 p {
@@ -51,3 +51,11 @@ img {
 .site-content {
   flex: 1;
 }
+
+@media (max-width: 767px) {
+  .page-text {
+    margin-left: 6vw;
+    margin-right: 6vw;
+    }
+}
+
