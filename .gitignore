@@ -4,4 +4,4 @@ _site
 .jekyll-metadata
 vendor
 node_modules
-.env*
+_data/_secret_data.yml

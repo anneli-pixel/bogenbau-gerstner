@@ -2,11 +2,28 @@
 layout: default
 title: Kontakt
 permalink: /kontakt
+api-key: mapbox
 ---
 
 <h1>KONTAKT</h1>
 
-<img src="" alt="">
+{% assign api-key = site.data._secret_data.api-keys[page.api-key] %}
+
+<div id='map' style='width: 400px; height: 300px;'></div>
+<script>
+  mapboxgl.accessToken = '{{ api-key }}';
+  var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/anneli-pixel/ckkbfnmzb0uzw17rucvu16yzn',
+    center: [13.39258295167215, 52.50513818315201],
+    zoom: 16
+  });
+  var marker = new mapboxgl.Marker()
+    .setLngLat([13.39258295167215, 52.50513818315201])
+    .addTo(map);
+  // Add zoom and rotation controls to the map.
+  map.addControl(new mapboxgl.NavigationControl());
+</script>
 
 <div class="page-text">
   <div class="kontakt-flex-container">
@@ -14,9 +31,9 @@ permalink: /kontakt
       <h2>Adresse</h2>
         <p>
           Franziska Gerstner Bogenbau<br>
-          Sowiesostr. 1<br>
-          12345 Berlin<br>
-          Tel.: 030 12345678<br>
+          Charlottenstr. 95<br>
+          10969 Berlin<br>
+          Tel.: 030 20833365<br>
           E-Mail: <a href="mailto:franzi@superbogen.de">franzi@superbogen.de</a>
         </p>
     </div>
@@ -42,9 +59,9 @@ permalink: /kontakt
       <h2>Impressum</h2>
       <p>
         Franziska Gerstner Bogenbau<br>
-        Sowiesostr. 1<br>
-        12345 Berlin<br>
-        Tel.: 030 12345678<br>
+        Charlottenstr. 95<br>
+        10969 Berlin<br>
+        Tel.: 030 20833365<br>
         E-Mail: <a href="mailto:franzi@superbogen.de">franzi@superbogen.de</a>
       </p>
     </div>
