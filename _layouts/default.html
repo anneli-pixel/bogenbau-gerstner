@@ -1,3 +1,9 @@
+---
+api-key: mapbox
+---
+
+{% assign api-key = site.data._secret_data.api-keys[page.api-key] %}
+
 <!doctype html>
 <html>
   <head>
@@ -10,10 +16,8 @@
     <link rel="stylesheet" href="/assets/css/styles.css">
     <script src="https://kit.fontawesome.com/633fcdcf28.js" crossorigin="anonymous"></script>
     <!-- Mapbox: -->
-    <script src='https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.js'></script>
     <link href='https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.css' rel='stylesheet' />
-
-
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.js'></script>
   </head>
   <body class="site-container">
     {% include navigation.html %}
@@ -21,5 +25,28 @@
       {{ content }}
     </main>
     {% include footer.html %}
+
+    {% if page.title == "Kontakt" %}
+      <script>
+        mapboxgl.accessToken = '{{ api-key }}';
+
+        var map = new mapboxgl.Map({
+          container: 'map',
+          style: 'mapbox://styles/anneli-pixel/ckkbfnmzb0uzw17rucvu16yzn',
+          center: [13.39258295167215, 52.50513818315201],
+          zoom: 16
+        });
+
+        var marker = new mapboxgl.Marker({
+          color: '#8c3f00'
+        })
+           .setLngLat([13.39258295167215, 52.50513818315201])
+           .addTo(map);
+
+        // Add zoom and rotation controls to the map.
+        map.addControl(new mapboxgl.NavigationControl());
+      </script>
+    {% endif %}
   </body>
 </html>
+

@@ -7,23 +7,7 @@ api-key: mapbox
 
 <h1>KONTAKT</h1>
 
-{% assign api-key = site.data._secret_data.api-keys[page.api-key] %}
-
-<div id='map' style='width: 400px; height: 300px;'></div>
-<script>
-  mapboxgl.accessToken = '{{ api-key }}';
-  var map = new mapboxgl.Map({
-    container: 'map',
-    style: 'mapbox://styles/anneli-pixel/ckkbfnmzb0uzw17rucvu16yzn',
-    center: [13.39258295167215, 52.50513818315201],
-    zoom: 16
-  });
-  var marker = new mapboxgl.Marker()
-    .setLngLat([13.39258295167215, 52.50513818315201])
-    .addTo(map);
-  // Add zoom and rotation controls to the map.
-  map.addControl(new mapboxgl.NavigationControl());
-</script>
+<div id='map' style='width: 100%; height: 300px;'></div>
 
 <div class="page-text">
   <div class="kontakt-flex-container">
@@ -73,5 +57,4 @@ api-key: mapbox
     <h2>Kontaktformular</h2>
   </div>
 </div>
-
 
