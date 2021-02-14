@@ -21,7 +21,10 @@ p {
 }
 
 img {
+  display: block;
   width: 100%;
+  margin: auto;
+  border-radius: 0.8rem;
   height: 300px;
   object-fit: cover;
 }
@@ -31,9 +34,17 @@ img.portrait {
   }
 
 @media (max-width: 767px) {
+
+img {
+  width: 88vw;
+}
+
   img.portrait {
+    display: block;
     height: unset;
-    width: 100vw;
+    width: 88vw;
+    margin: auto;
+    border-radius: 0.8rem;
   }
 }
 
@@ -43,6 +54,7 @@ img.portrait {
     //height: 48vh;
     width: 336px;
     //width: 32vw;
+    border-radius: 0.8rem;
   }
 }
 
