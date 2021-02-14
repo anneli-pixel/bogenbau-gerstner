@@ -39,8 +39,10 @@ img.portrait {
 
 @media (min-width: 768px) {
   img.portrait {
-    height: 48vh;
-    width: unset;
+    height: unset;
+    //height: 48vh;
+    width: 336px;
+    //width: 32vw;
   }
 }
 
