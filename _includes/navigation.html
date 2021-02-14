@@ -1,5 +1,9 @@
 <nav class="navigation">
-  <img src="assets/images/logo_ohne_hintergrund.png" alt="" class="navigation-logo">
+  <div class="navigation-logo-wrapper">
+    <img src="assets/images/logo_ohne_hintergrund_beschnitten.png" alt="" class="navigation-logo">
+    <div>Franziska Gerstner<b> Bogenbau</b></div>
+  </div>
+
   <div class= "navigation-items">
     {% for item in site.data.navigation %}
       <a href="{{ item.link }}" {% if page.url == item.link %}id="current"{% endif %}>
