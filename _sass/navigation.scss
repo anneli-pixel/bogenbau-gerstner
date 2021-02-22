@@ -6,13 +6,20 @@
   top: 0;
   z-index: 100;
   background-color: #fffbf6;
+  box-shadow: 0 10px 10px -10px rgba(33, 35, 38, 0.1), 0 2px 1px -1px #C8A95C;
+}
+
+.navigation > * {
+  flex: 1 1 33.3%;
 }
 
 .navigation-items {
-  //border-bottom-style: solid;
-  //border-width: 1px;
-  //border-color: #B0B4B6;
+  display: flex;
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
   padding-bottom: 0.4rem;
+  justify-content: space-between;
+  font-size: larger;
 }
 
 .navigation-items a {
@@ -20,10 +27,11 @@
   font-family: Spectral;
   color: #000000;
   position: relative;
+}
 
-  &:hover {
-    //color: #C8A95C;
-  }
+#nav-title-yellow-bold-text {
+  color: #C8A95C;
+  font-weight: bolder;
 }
 
 .navigation-items a,
@@ -49,6 +57,14 @@
   width: 100%;
 }
 
+#navigation-title {
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
+  padding-bottom: 0.4rem;
+  cursor: pointer;
+  font-size: larger;
+}
+
 #current {
   color: #C8A95C;
   font-weight: bolder;
@@ -71,22 +87,23 @@
 @media (min-width: 768px) {
 
   .navigation-items a {
-    padding-left: 0.8rem;
-    padding-right: 0.8rem;
+    //padding-left: 0.8rem;
+    //padding-right: 0.8rem;
   }
 
   .navigation {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    height: 100px;
-    margin-top: 0.8rem;
+    align-items: flex-end;
+    height: 124px;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
   }
 
   .navigation-logo {
-    height: 96%;
+    height: 100%;
     width: inherit;
-    padding-right: 0.4rem;
+    object-fit: contain;
   }
 
   .navigation-logo-wrapper {

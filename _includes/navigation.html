@@ -1,10 +1,13 @@
 <nav class="navigation">
-  <div class="navigation-logo-wrapper">
-    <div>Franziska Gerstner<b> Bogenbau</b></div>
+ <!--  <div class="navigation-logo-wrapper">
+    <div>Franziska Gerstner<span style="color:#C8A95C; font-weight:bolder"> Bogenbau</span></div>
     <img src="assets/images/logo_ohne_hintergrund_beschnitten.png" alt="" class="navigation-logo">
-  </div>
+  </div> -->
 
-  <div class= "navigation-items">
+  <div id="navigation-title">Franziska Gerstner <span id="nav-title-yellow-bold-text"> Bogenbau</span></div>
+  <img src="assets/images/logo_ohne_hintergrund_beschnitten.png" alt="" class="navigation-logo">
+
+  <div class="navigation-items">
     {% for item in site.data.navigation %}
       <a href="{{ item.link }}"
          {% if page.url == item.link %}
@@ -17,3 +20,4 @@
     {% endfor %}
   </div>
 </nav>
+
