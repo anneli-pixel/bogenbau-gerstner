@@ -4,8 +4,13 @@
     <img src="assets/images/logo_ohne_hintergrund_beschnitten.png" alt="" class="navigation-logo">
   </div> -->
 
-  <div id="navigation-title">Franziska Gerstner <span id="nav-title-yellow-bold-text"> Bogenbau</span></div>
-  <img src="assets/images/logo_ohne_hintergrund_beschnitten.png" alt="" class="navigation-logo">
+  <div class="desktop" id="navigation-title">Franziska Gerstner <span id="nav-title-yellow-bold-text"> Bogenbau</span></div>
+  <img src="assets/images/logo_ohne_hintergrund_beschnitten.png" alt="" class="navigation-logo desktop">
+
+  <div class="mobile">
+    <div id="navigation-title">Franziska Gerstner <span id="nav-title-yellow-bold-text"> Bogenbau</span></div>
+    <img src="assets/images/logo_ohne_hintergrund_beschnitten.png" alt="" class="navigation-logo">
+  </div>
 
   <div class="navigation-items">
     {% for item in site.data.navigation %}
@@ -20,4 +25,6 @@
     {% endfor %}
   </div>
 </nav>
+
+
 
