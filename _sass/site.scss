@@ -41,8 +41,6 @@ img.portrait {
 
 .site-content {
   flex: 1;
-  padding-right: 0.8rem;
-  padding-left: 0.8rem;
 }
 
 @media (max-width: 767px) {
@@ -80,6 +78,11 @@ img.portrait {
   .site-container {
     max-width: 88vw;
     margin: auto;
+  }
+
+  .site-content {
+    padding-right: 0.8rem;
+    padding-left: 0.8rem;
   }
 }
 

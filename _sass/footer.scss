@@ -4,6 +4,7 @@
   border-top-style: solid;
   border-width: 1px;
   border-color: #c8a95c;
+  margin-top: 1.6rem;
 }
 .footer ul {
   list-style: none;
@@ -37,6 +38,7 @@
 @media (max-width: 767px) {
   .footer {
     justify-content: center;
+    padding-top: 0.8rem;
   }
 
   .footer ul {
