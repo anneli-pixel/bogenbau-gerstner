@@ -1,10 +1,26 @@
 .kontakt-flex-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+}
+
+#anfahrt-optionen {
+  display: flex;
+
+  h4 {
+    margin: 0;
+  }
+}
+
+.option > p {
+  margin-top: 0.4rem;
 }
 
 @media (max-width: 767px) {
   .kontakt-flex-container {
+    flex-direction: column;
+  }
+
+  #anfahrt-optionen {
     flex-direction: column;
   }
 }
@@ -21,7 +37,17 @@
   }
 
   .kontakt-flex-container > * {
-    padding: 0.2rem;
+    //padding: 0.2rem;
+  }
+
+  #adresse, #oeffnungszeiten {
+    margin-right: 1.6rem;
+    flex: 0 1 33.3%;
+  }
+
+  .option {
+    margin-right: 1.6rem;
+    flex: 1 0 33.3%;
   }
 }
 
