@@ -18,21 +18,42 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Your awesome title
+title: Franziska Gerstner Bogenbau
 email: your-email@example.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+description: Franziska Gerstner Bogenbau Berlin. Bogenbezüge, Reparaturen, Neubau. Bögen für Geigen, Bratschen und Violoncelli.
+  >- # this means to ignore newlines until "baseurl:"
+
+#  Write an awesome description for your new site here. You can edit this
+#  line in _config.yml. It will appear in your document head meta (for
+#  Google search results) and in your feed.xml site description.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
+logo: assets/images/logo_ohne_hintergrund_mit_schriftzug_beschnitten.png
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /assets/images/logo_ohne_hintergrund_mit_schriftzug_beschnitten.png
+
+social:
+  name: Franziska Gerstner Bogenbau
+  links:
+    - https://www.instagram.com/fgerstner_bows/
+
+twitter:
+  card: summary_large_image
+
+locale: "de_DE"
+
 
 # Build settings
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
 
 # Exclude from processing.
 # The following items will not be processed, by default.
