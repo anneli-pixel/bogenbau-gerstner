@@ -20,7 +20,7 @@
 
 title: Franziska Gerstner Bogenbau
 email: your-email@example.com
-description: Franziska Gerstner Bogenbau Berlin. Bogenbezüge, Reparaturen, Neubau. Bögen für Geigen, Bratschen und Violoncelli.
+description: 123 Franziska Gerstner Bogenbau Berlin. Bogenbezüge, Reparaturen, Neubau. Bögen für Geigen, Bratschen und Violoncelli.
 # this means to ignore newlines until "baseurl:"
 
 #  Write an awesome description for your new site here. You can edit this
@@ -28,7 +28,7 @@ description: Franziska Gerstner Bogenbau Berlin. Bogenbezüge, Reparaturen, Neub
 #  Google search results) and in your feed.xml site description.
 lang: de_DE
 baseurl: "/bogenbau-gerstner" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://anneli-pixel.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
 logo: assets/images/logo_ohne_hintergrund_mit_schriftzug_beschnitten.png
