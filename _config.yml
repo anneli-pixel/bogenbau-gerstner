@@ -28,7 +28,7 @@ description: 123 Franziska Gerstner Bogenbau Berlin. Bogenbezüge, Reparaturen, 
 #  Google search results) and in your feed.xml site description.
 lang: de_DE
 baseurl: "/bogenbau-gerstner" # the subpath of your site, e.g. /blog
-url: "https://anneli-pixel.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
 logo: assets/images/logo_ohne_hintergrund_mit_schriftzug_beschnitten.png
