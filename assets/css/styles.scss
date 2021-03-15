@@ -1,14 +1,8 @@
-
-// @import "site";
-// @import "navigation";
-// @import "footer";
-// @import "über_mich";
-// @import "kontakt";
-// @import "map";
-
-
-body {
-  font-family: Spectral;
-  font-weight: 300;
-  background-color: #fffbf6;
-}
+---
+---
+@import "site";
+@import "navigation";
+@import "footer";
+@import "über_mich";
+@import "kontakt";
+@import "map";
