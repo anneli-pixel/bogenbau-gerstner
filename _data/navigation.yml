@@ -1,7 +1,7 @@
 # - name: HOME
 #   link: /home
 - name: Werkstatt
-  link: /werkstatt
+  link: /
 - name: Über mich
   link: /über-mich
 - name: Kontakt
