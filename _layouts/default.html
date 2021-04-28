@@ -10,6 +10,7 @@ api-key: mapbox
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <meta http-equiv="Content-Language" content="{{site.active_lang}}">
     <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Work+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/styles.css">
     <!-- Favicon: -->
@@ -38,6 +39,7 @@ api-key: mapbox
 
     <!-- SEO Data with Jekyll SEO Tag Gem: -->
     {% seo %}
+    {% I18n_Headers %}
   </head>
   <body class="site-container">
     {% include navigation.html %}

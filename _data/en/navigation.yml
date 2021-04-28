@@ -1,0 +1,8 @@
+# - name: HOME
+#   link: /home
+- name: Workshop
+  link: /
+- name: About me
+  link: /über-mich
+- name: Contact
+  link: /kontakt
