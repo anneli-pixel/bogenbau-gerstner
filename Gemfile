@@ -20,6 +20,7 @@ group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.12"
   gem 'jekyll-seo-tag'
   #gem 'i18n', '~> 1.8.7'
+  gem "jekyll-polyglot"
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
