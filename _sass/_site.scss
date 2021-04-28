@@ -5,6 +5,7 @@ body {
   font-family: Spectral;
   font-weight: 300;
   background-color: #fffbf6;
+  margin-top: 0
 }
 
 h1 {
@@ -48,6 +49,10 @@ img.portrait {
   text-decoration: underline;
 }
 
+.small-text {
+  font-size: small
+}
+
 @media (max-width: 767px) {
 
   img {
@@ -81,18 +86,25 @@ img.portrait {
   }
 
   .site-container {
-    max-width: 88vw;
-    margin: auto;
+    // max-width: 88vw;
+    // margin: auto;
   }
 
   .site-content {
     padding-right: 0.8rem;
     padding-left: 0.8rem;
+    max-width: 88vw;
+    margin: auto;
   }
 }
 
 @media (min-width: 992px) {
   .site-container {
+    // max-width: 872px;
+    // margin: auto;
+  }
+
+  .site-content {
     max-width: 872px;
     margin: auto;
   }

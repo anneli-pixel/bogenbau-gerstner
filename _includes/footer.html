@@ -2,13 +2,6 @@
   <ul>
     <li>© 2021 Franziska Gerstner</li>
 
-    <p>
-      <!-- jekyll-polyglot will process ferh= into href= through the static_href liquid block tag without relativizing the url; useful for making language navigation switchers  -->
-      {% for tongue in site.languages %}
-    <a {% if tongue == site.active_lang %}style="font-weight: bold;"{% endif %} {% static_href %}href="{% if tongue == site.default_lang %}{{site.baseurl}}{{page.url}}{% else %}{{site.baseurl}}/{{ tongue }}{{page.url}}{% endif %}"{% endstatic_href %} >{{ tongue }}</a> |
-      {% endfor %}
-    </p>
-
     <div class="footer-right-side">
       <!-- <li><a href="#">Datenschutz</a></li> -->
       {% for item in site.data.footer %}

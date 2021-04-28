@@ -4,6 +4,7 @@
     <img src="assets/images/logo_ohne_hintergrund_beschnitten.png" alt="" class="navigation-logo">
   </div> -->
 
+  <img src="assets/images/logo_ohne_hintergrund_beschnitten.png" alt="Logo Franziska Gerstner Bogenbau" class="navigation-logo desktop">
   <div class="desktop" id="navigation-title">
     Franziska Gerstner
     <span id="nav-title-yellow-bold-text">
@@ -14,7 +15,7 @@
       {% endif %}
     </span>
   </div>
-  <img src="assets/images/logo_ohne_hintergrund_beschnitten.png" alt="Logo Franziska Gerstner Bogenbau" class="navigation-logo desktop">
+
 
   <div class="mobile">
     <div id="navigation-title">Franziska Gerstner
@@ -31,7 +32,7 @@
 
   <div class="navigation-items">
     {% for item in site.data.navigation %}
-      <a href="{{ site.baseurl }}{{ item.link }}"
+      <a href="{{ site.baseurl }}{{ item.link }}" class="nav-item"
          {% if page.url == item.link %}
            id="current"
          {% else %}
@@ -40,6 +41,14 @@
         {{ item.name }}
       </a>
     {% endfor %}
+
+    <span class="small-text">
+      <!-- jekyll-polyglot will process ferh= into href= through the static_href liquid block tag without relativizing the url; useful for making language navigation switchers  -->
+      {% for tongue in site.languages %}
+        <a {% if tongue == site.active_lang %}id="selected-language"{% endif %} {% static_href %}href="{% if tongue == site.default_lang %}{{site.baseurl}}{{page.url}}{% else %}{{site.baseurl}}/{{ tongue }}{{page.url}}{% endif %}"{% endstatic_href %} >{{ tongue | upcase }}</a>
+      {% endfor %}
+    </span>
+
   </div>
 </nav>
 

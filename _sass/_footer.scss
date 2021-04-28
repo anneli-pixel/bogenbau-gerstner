@@ -5,11 +5,13 @@
   border-width: 1px;
   border-color: #c8a95c;
   margin-top: 1.6rem;
+  padding-left: 1.6rem;
+  padding-right: 1.6rem;
 }
 .footer ul {
   list-style: none;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   // border-top-style: solid;
   // border-width: 1px;
