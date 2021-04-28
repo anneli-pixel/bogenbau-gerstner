@@ -196,15 +196,31 @@
     padding-right: 0;
     padding-left: 0.4rem;
   }
+
+  #language-switcher {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
 }
 
 #selected-language {
   // text-decoration: underline;
   // font-weight: bold;
   border: solid;
-    border-width: 1px;
-    border-radius: 8px;
-    padding: 4px;
-    border-color: #c8a95c;
+  border-width: 1px;
+  border-radius: 8px;
+  padding: 4px;
+  border-color: #c8a95c;
 }
+
+#unselected-language {
+  padding: 4px;
+  border: solid;
+  border-color: #fffbf6;
+  border-width: 1px;
+  border-radius: 8px;
+}
+
+
 
