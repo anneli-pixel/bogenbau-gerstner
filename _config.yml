@@ -79,3 +79,10 @@ plugins:
 sass:
     sass_dir: _sass
 
+# Polyglot Internationalization Plugin
+languages: ["de", "en"]
+default_lang: "de"
+exclude_from_localization: ["javascript", "images", "css", "public"]
+parallel_localization: true
+# lang_from_path: true # enables getting page language from the first or second path segment if the lang frontmatter isn't defined.
+

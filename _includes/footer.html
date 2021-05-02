@@ -1,10 +1,18 @@
 <footer class="footer">
   <ul>
-    <li>© 2021 Franziska Gerstner Bogenbau</li>
+    <li>© 2021 Franziska Gerstner</li>
 
     <div class="footer-right-side">
       <!-- <li><a href="#">Datenschutz</a></li> -->
-      <li><a href="{{ site.baseurl }}{% link impressum.html %}">Impressum</a></li>
+      {% for item in site.data.footer %}
+        {% if page.lang == item.lang %}
+          <li>
+            <a href="{{ site.baseurl }}{{ item.link }}">
+              {{ item.name }}
+            </a>
+          </li>
+        {% endif %}
+      {% endfor %}
       <li><a href="https://www.instagram.com/fgerstner_bows/" target="_blank"><i class="fab fa-instagram"></i></a></li>
     </div>
 

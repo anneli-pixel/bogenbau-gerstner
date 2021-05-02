@@ -1,0 +1,6 @@
+- name: Impressum
+  lang: de
+  link: /impressum
+- name: Imprint
+  lang: en
+  link: /impressum
