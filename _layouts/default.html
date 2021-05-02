@@ -48,7 +48,7 @@ api-key: mapbox
     </main>
     {% include footer.html %}
 
-    {% if page.title == "Kontakt" %}
+    {% if page.title == "Kontakt" or page.title == "Contact" %}
       <script>
         mapboxgl.accessToken = '{{ api-key }}';
 
