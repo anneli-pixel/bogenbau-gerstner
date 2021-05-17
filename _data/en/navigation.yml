@@ -2,7 +2,7 @@
 #   link: /home
 - name: Workshop
   link: /
-- name: About me
-  link: /über-mich
+- name: About
+  link: /person
 - name: Contact
   link: /kontakt

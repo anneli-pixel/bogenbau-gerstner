@@ -2,7 +2,7 @@
 #   link: /home
 - name: Werkstatt
   link: /
-- name: Über mich
-  link: /über-mich
+- name: Person
+  link: /person
 - name: Kontakt
   link: /kontakt
